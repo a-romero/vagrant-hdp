@@ -1,0 +1,3 @@
+curl  -H "X-Requested-By: admin" --user admin:admin -X POST http://ambarimaster.cluster:8080/api/v1/blueprints/4-NODE_BLUEPRINT?validate_topology=false --data "@4-node-blueprint.json"
+curl  -H "X-Requested-By: admin" --user admin:admin -X POST http://ambarimaster.cluster:8080/api/v1/clusters/ARTEST25 --data "@host_mapping.json"
+

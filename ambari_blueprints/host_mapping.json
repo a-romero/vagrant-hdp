@@ -1,0 +1,27 @@
+{
+  "blueprint":  "4-node-blueprint",
+  "default_password": "password",
+  "host_groups":[
+    {
+      "hosts":[ { "fqdn": "ambarimaster.cluster" }
+      ], "name": "hostgroup_admin_ambari_master"
+    },
+    {
+      "hosts":[ { "fqdn": "node-1.cluster" }
+      ], "name": "hostgroup_hadoop_master_1"
+    },
+    {
+      "hosts":[
+          { "fqdn": "node-2.cluster" }
+      ], "name": "hostgroup_hadoop_master_2"
+    },
+    {
+      "hosts":[
+        { "fqdn": "node-3.cluster" }
+      ], "name": "hostgroup_hadoop_datanode"
+    }
+  ],
+  "configurations":[
+
+  ]
+}
